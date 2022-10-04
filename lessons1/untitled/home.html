@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .header {
+      background-color: mediumaquamarine;
+    }
+    .text-center {
+      text-align: center;
+      /*вирівнює текст по центру*/
+    }
+    .list-item {
+      display: flex;
+      /*вирівнює все всередині елементи в одну лінію*/
+      flex-wrap: wrap;
+      /*елементи які не вміщаються за шириною переносить на інший рядок*/
+      list-style: none;
+      /*прибирає крапки (маркери) у списку*/
+      gap: 12px;
+      /*створює відступ між елементами у яких disply: flex*/
+    }
+    .item {
+      width: 23%;
+      /*задає ширину елементу*/
+      border: 1px solid black;
+      /*border задає межу в пікселях, solid - суцільна лінія та колір у кінці*/
+      padding: 2px 0;
+      /*внутрішній відступ перше число це значення для верх/низ друге для ліво/право*/
+      border-radius: 4px;
+      /*задає радіус округлення для border*/
+    }
+    .item:hover { /*class: hover задає які стилі будуть при наведенні мишки*/
+      background-color: brown;
+      color: darkblue;
+      cursor: pointer;
+      /*змінює курсор мишки на палець*/
+      transition: 0.5s;
+      /*задає значення по закінченню якого приміняються нові стилі*/
+    }
+    .text {
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header class="header text-center">
+    <h1>Rozetka</h1>
+  </header>
+  <section>
+    <div class="text-center">
+      <h2>Товари для дому</h2>
+      <p>Встигни купити за знижкою 50%</p>
+    </div>
+    <ul class="list-item text-center">
+      <li class="item">Диван</li>
+      <li class="item">Стіл</li>
+      <li class="item">Шафа</li>
+      <li class="item">Стул</li>
+      <li class="item">Лампа</li>
+      <li class="item">Телевізор</li>
+      <li class="item">Пральна машина</li>
+      <li class="item">Картини</li>
+    </ul>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt dicta distinctio dolores doloribus eveniet
+      exercitationem fuga libero magnam magni molestias neque nobis pariatur, porro quas quasi reiciendis repellat ut
+      veritatis, vitae? Animi deserunt dolorem omnis sit tenetur vitae. Eum exercitationem facilis repudiandae. Facilis
+      fuga, id quas repellendus sunt unde? A architecto consequatur cumque, facere, hic odit officiis omnis porro quae
+      quas quisquam ratione similique. Commodi facere facilis impedit ipsum natus odio repellat voluptatibus. Ab
+      corporis cum doloremque eaque eligendi explicabo fuga, ipsam labore nihil numquam pariatur, perspiciatis quasi
+      reprehenderit, saepe sunt. Accusantium aliquid eaque ex quam temporibus. Aliquam aspernatur at beatae cum
+      distinctio, eaque eos eum ex fuga illo impedit, iure magni mollitia necessitatibus nisi odio porro, provident
+      recusandae repellendus saepe ut velit vitae voluptatem! Accusamus at commodi enim eos excepturi laboriosam maiores
+      necessitatibus nobis, nostrum. Alias animi assumenda aut consequuntur cupiditate dicta earum eveniet ipsa iste
+      maxime nesciunt obcaecati, provident quasi reprehenderit sint soluta voluptatum. Earum exercitationem illo magni
+      molestias nam repellat sed. Accusamus architecto assumenda aut dicta et eveniet harum in incidunt itaque nobis
+      nulla odio pariatur, repellat sit tempore totam veritatis. Atque deleniti fugiat ipsa iste iusto mollitia numquam
+      repudiandae similique tempora veniam, veritatis voluptatem voluptatum.</p>
+  </section>
+</body>
+</html>

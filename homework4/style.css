@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("images/background.jpg");
+    width: 1366px;
+    height: 768px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 22px;
+}
+
+.header {
+    padding: 49px 156px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-left-side {
+    margin-right: 656px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.header-left-side:hover .image {
+    background-image: url("images/logo (1).png");
+    cursor: pointer;
+}
+
+.header-left-side:hover .title {
+    color: #F26522;
+    cursor: pointer;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-below {
+    font-size: 18px;
+}
+
+.image {
+    background-image: url("images/logo (2).png");
+    background-size: 100%;
+    width: 46px;
+    height: 44px;
+    background-repeat: no-repeat;
+}
+
+.header-right-side {
+    color: white;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section {
+    padding: 0 156px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-info {
+    background-color: #F26522;
+    width: 100%;
+    height: 63px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 16px 22px;
+}
+
+.card:hover .card-info {
+    display: flex;
+    transition: .5s;
+    align-items: flex-end;
+}
+
+.card:hover .card-title {
+    color: #F26522;
+}
+
+.image-wrapper {
+    position: relative;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.text-left {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.card-image {
+    width: 308px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.card:nth-child(1) .card-image {
+    background-image: url("images/shopping centre.jpg");
+}
+
+.card:nth-child(2) .card-image {
+    background-image: url("images/sightsee .jpg");
+}
+
+.card:nth-child(3) .card-image {
+    background-image: url("images/food tour.jpg");
+}
+
+.card:nth-child(4) .card-image {
+    background-image: url("images/bars and nightlife.jpg");
+}
+
+.card:nth-child(5) .card-image {
+    background-image: url("images/art.jpg");
+}
+
+.card:nth-child(6) .card-image {
+    background-image: url("images/walking.jpg");
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: 12px;
+}
